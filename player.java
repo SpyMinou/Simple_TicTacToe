@@ -1,7 +1,7 @@
 
 // importations : 
 import java.util.Scanner;
-import field.field;
+
 
 public class player {
     private String name;    // nom du joueur 
@@ -27,7 +27,7 @@ public class player {
     
         // le joueur selectionne quel case a jouer : 
     public void move(int x,field XO){
-        System.out.println(this.getName()+" : Quelle est la case a joue : ");
+        System.out.println(this.getName()+" : where do you wanna play : ");
         Scanner scn = new Scanner(System.in);
         String S;
         S = scn.next();
@@ -37,7 +37,7 @@ public class player {
                 if(XO.exist(S)){
                     break;
                 }else{
-                    System.out.println("Case deja pris ou introuvable ... veuillez ressayer : ");
+                    System.out.println("move inacceptable... try again : ");
                     S = scn.next();
                 }
             }
@@ -49,7 +49,7 @@ public class player {
                 if(XO.exist(S)){
                     break;
                 }else{
-                    System.out.println("Case deja pris ou introuvable ... veuillez ressayer : ");
+                    System.out.println("move inacceptable... try again : ");
                     S = scn.next();
                 }
             }
