@@ -2,16 +2,16 @@
 
 import java.util.Scanner;
 
-import Game.game;
+
 
 
 public class test {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         String N1,N2;
-        System.out.println("Donner le nom du joueur qui jouera avec le X :  ");
+        System.out.println("Type the name of player one : X :  ");
         N1 = scn.nextLine();
-        System.out.println("Donner le nom du joueur qui jouera avec le O :  ");
+        System.out.println("Type the name of player two : O :  ");
         N2 = scn.nextLine();
 
         game XOXO = new game(N1, N2);
