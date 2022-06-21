@@ -1,4 +1,4 @@
-package player;
+
 // importations : 
 import java.util.Scanner;
 import field.field;
