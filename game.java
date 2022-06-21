@@ -3,8 +3,7 @@
 
 import java.util.Scanner;
 
-import field.field;
-import player.player;
+
 
 public class game {
    private player P1,P2;
@@ -91,20 +90,20 @@ public class game {
         play1();
         P1.afficherPlayer();
         P2.afficherPlayer();
-        System.out.println("Voulez vous jouer encore une fois : 'oui' 'non' ");
+        System.out.println("Do you wanna play again ? 'yes'  /  'no' ");
         S = scn.next();
-        if(S.toLowerCase().equals("oui")){
-            while(S.toLowerCase().equals("oui")){
+        if(S.toLowerCase().equals("yes")){
+            while(S.toLowerCase().equals("yes")){
                 play2();
                 P1.afficherPlayer();
                 P2.afficherPlayer();
-                System.out.println("Voulez vous jouer encore une fois : 'oui' 'non' ");
+                System.out.println("Do you wanna play again ? 'yes'  /  'no' ");
                 S = scn.next();
-                if(S.toLowerCase().equals("oui")){    
+                if(S.toLowerCase().equals("yes")){    
                     play1();
                     P1.afficherPlayer();
                     P2.afficherPlayer();
-                    System.out.println("Voulez vous jouer encore une fois : 'oui' 'non' ");
+                    System.out.println("Do you wanna play again ? 'yes'  /  'no' ");
                 }else{break;}
             }
         }
